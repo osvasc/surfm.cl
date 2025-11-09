@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contactos - Radio El Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="nav-wrap">
+  <div class="nav-logo">Radio<span>ElPortal</span></div>
+  <nav class="nav-links" id="navLinks">
+    <a href="index.html">Inicio</a>
+    <a href="noticias.php">Noticias</a>
+    <a href="sobrenosotros.html">Quienes somos</a>
+    <a href="cobertura.html">Cobertura</a>
+    <a href="tarifa.html">Tarifa publicitaria</a>
+    <a href="contactos.html">Contactos</a>
+  </nav>
+  <div class="nav-toggle" id="navToggle"><span></span><span></span><span></span></div>
+</header>
+
+<main class="section section-soft" style="padding-top:4.8rem;">
+  <div class="container contact-wrap">
+    <div class="contact-info">
+      <h2>Contactos</h2>
+      <p class="section-text">
+        Edita estos campos con la información real de la emisora.
+      </p>
+      <ul class="contact-list">
+        <li><strong>Dirección:</strong> Calle / Ciudad / País</li>
+        <li><strong>Teléfono estudio:</strong> +56 9 0000 0000</li>
+        <li><strong>Comercial:</strong> +56 9 0000 0001</li>
+        <li><strong>Email:</strong> contacto@radioelportal.cl</li>
+      </ul>
+    </div>
+    <div class="contact-form-box">
+      <form class="contact-form" action="contacto_send.php" method="POST">
+        <label>Nombre *</label>
+        <input type="text" name="nombre" required>
+        <label>Correo electrónico *</label>
+        <input type="email" name="email" required>
+        <label>Mensaje *</label>
+        <textarea name="mensaje" rows="4" required></textarea>
+        <button type="submit" class="btn-primary full">Enviar mensaje</button>
+      </form>
+    </div>
+  </div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

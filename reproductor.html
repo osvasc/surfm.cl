@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Reproductor en vivo - Radio El Portal</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="section section-soft">
+  <div class="container" style="padding-top:3rem;">
+    <h2>Escuchar Radio El Portal</h2>
+    <p class="section-text">
+      Este reproductor embebido puede usarse en ventanas emergentes o incrustado en otras páginas.
+    </p>
+    <div class="player-wrap">
+      <audio id="radioPlayer" preload="none">
+        <source src="https://sonic-cl.arkeo.cl:9330/;mp3" type="audio/mpeg">
+      </audio>
+      <button id="playBtn" class="play-btn">▶ Escuchar en vivo</button>
+      <div class="player-info">
+        <div class="player-title">Radio El Portal - Señal Online</div>
+        <div class="player-status" id="playerStatus">Detenido</div>
+      </div>
+      <div class="player-eq">
+        <span></span><span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
